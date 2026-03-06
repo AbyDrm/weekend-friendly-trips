@@ -1,0 +1,10 @@
+version : 2 
+
+sources:
+  - name: raw
+    schema: raw 
+    tables:
+      - name: raw_basilics
+      - name: raw_festivals
+      - name: raw_stations
+      - name: raw_train_fares
