@@ -4,7 +4,7 @@ sources:
   - name: raw
     schema: raw 
     tables:
-      - name: raw_basilics
+      - name: raw_cultural_places
       - name: raw_festivals
       - name: raw_stations
       - name: raw_train_fares
