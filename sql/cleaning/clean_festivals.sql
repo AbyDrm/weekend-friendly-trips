@@ -15,6 +15,7 @@ SELECT
    departement_principal_de_deroulement AS department,
    commune_principale_de_deroulement AS city,
    CAST(code_postal AS string) as postcode,
+   code_insee_commune AS city_insee_code, 
    site_internet AS website,
    adresse_email AS email,
    annee_de_creation_d_festival AS creation_year,

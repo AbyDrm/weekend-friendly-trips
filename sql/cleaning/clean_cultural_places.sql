@@ -16,6 +16,7 @@ SELECT
   Adresse AS address,
   CAST(`Code Postal` AS STRING) AS postcode,
   libelle_geographique AS city,
+  code_insee AS city_insee_code,
   `Type équipement ou lieu` AS type,
   `Label et appellation` AS label,
   `Région` AS region,
