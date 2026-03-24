@@ -23,6 +23,12 @@ SELECT
   Domaine AS domain,
   Sous_domaine AS subdomain,
   CAST(Latitude AS FLOAT64) AS latitude,
-  CAST(Longitude AS FLOAT64) AS longitude
+  CAST(Longitude AS FLOAT64) AS longitude,
+  
+  -- Distance from Paris (in kilometers)
+  ST_DISTANCE(
+    ST_GEOGPOINT(longitude, latitude), -- place distance
+    ST_GEOGPOINT(2.355, 48.856) -- Paris city center
+  ) / 1000 AS distance_from_paris_km
 
 FROM `weekend-friendly-trips-489113.raw.raw_cultural_places` 
