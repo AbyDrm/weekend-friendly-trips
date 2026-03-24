@@ -12,11 +12,12 @@ WITH dedup AS(
 SELECT  
 
   -- Cleaned + renamed columns
+  CAST(IDRESEAU AS STRING) AS station_id,
+  CAST(CODE_UIC AS STRING) AS station_uic,
   LIBELLE AS station_name,
   VOYAGEURS = 'O' AS is_passenger_station, 
   COMMUNE AS city,
   DEPARTEMEN AS department, 
-  CAST(IDRESEAU AS STRING) AS station_id,
   X_WGS84 AS longitude, 
   Y_WGS84 AS latitude, 
   `Geo Point` AS geo_point,
